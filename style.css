@@ -1,10 +1,57 @@
  body{
-    background-color:rgb(114, 168, 214);
+    background-color:rgb(84, 115, 141);
     margin: 0;
+ }
+ .wrapper{
+   background-color:rgb(114, 168, 214);
+   width:90%;
+   margin:0 auto;
+   display:grid;
+   Grid-template-rows: 80px 50px auto 50px;
+   grid-template-areas:
+   "header"
+   "nav"
+   "main"
+   "footer"
+ }
+
+ header{
+background-color: rgb(54, 103, 146);
+grid-area: header;
+ }
+ 
+ nav{
+   background-color: rgb(77, 146, 146);
+   grid-area: nav;
+ }
+ 
+ nav > ul{
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+
+ }
+ 
+ nav li{
+   list-style-type: none;
+   text-align: center;
+   display:grid;
+   align-self:stretch;
+   align-items: stretch;
+ }
+ 
+ main{
+   background-color: rgb(28, 130, 219);
+   grid-area: main;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: auto;
  }
 
  p{
-    color:black
+    color:black;
  }
 
  h1{
@@ -16,12 +63,14 @@
    border-style: dashed; 
 
  }
+ 
  .altp{
     text-align: center;
     background-color:rgb(126, 45, 82);
     color:white;
     margin:0
  }
+ 
  .altp2{text-align: right;}
  h2{ 
    text-align: center;
@@ -32,11 +81,12 @@
  }
 
  a{text-decoration-line: none;
+   color:black
 }
-img{width: 45%;
-   image-orientation: center
-   ;
+img{width: 30%;
+   image-orientation: center;
 }
+
 footer{text-align:center;
    background-color:rgb(126, 45, 82);
    margin:0
