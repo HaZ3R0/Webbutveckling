@@ -15,19 +15,22 @@ tr:nth-child(1){
     background-color: rgb(189, 210, 228);
 }
 
-td:nth-child(1){
+td:nth-child(2), td:nth-child(3){
+    text-align: center;
+}
+
+
+td:nth-child(4), th:nth-child(4){
+    text-align: right;
+}
+
+th:nth-child(1){
     text-align: left;
 }
 
-td:nth-child(2){
-    text-align: center;
-}
 
-td:nth-child(3){
-    text-align: center;
-}
-
-td:nth-child(4){
-    text-align: right;
+caption{
+    caption-side: bottom;
+    font-size: 30px;
 }
 
